@@ -1,0 +1,40 @@
+STEP 1️⃣ Create a HashMap
+Map<String, List<String>> map = new HashMap<>();
+
+STEP 2️⃣ Take one word at a time
+
+Example: "eat"
+
+Convert to char array
+char[] chars = "eat".toCharArray();
+
+Sort it
+Arrays.sort(chars);
+
+
+Now it becomes:
+
+"aet"
+
+STEP 3️⃣ Use sorted word as key
+String key = new String(chars);
+
+STEP 4️⃣ Put in map
+
+If key does not exist, create new list
+
+Add the original word
+
+map.putIfAbsent(key, new ArrayList<>());
+map.get(key).add("eat");
+
+STEP 5️⃣ Repeat for all words
+
+Map will look like this:
+
+"aet" → ["eat","tea","ate"]
+"ant" → ["tan","nat"]
+"abt" → ["bat"]
+
+STEP 6️⃣ Return only the values
+return new ArrayList<>(map.values());
