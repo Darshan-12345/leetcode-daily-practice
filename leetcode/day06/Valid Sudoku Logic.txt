@@ -1,0 +1,47 @@
+🔹 Step 1: HashSet
+HashSet<String> seen = new HashSet<>();
+
+
+This set stores what we have already seen.
+
+Example entries:
+
+"5 in row 0"
+"5 in col 2"
+"5 in box 0-0"
+
+🔹 Step 2: Loop Through Board
+for (int row = 0; row < 9; row++)
+    for (int col = 0; col < 9; col++)
+
+
+We check each cell one by one.
+
+🔹 Step 3: Skip Empty Cells
+if (current == '.') continue;
+
+
+Empty cells don’t matter.
+
+🔹 Step 4: Identify Row, Column, and Box
+row / 3
+col / 3
+
+
+This tells which 3×3 box the cell belongs to.
+
+Example:
+
+row = 4, col = 5
+box = 1-1
+
+🔹 Step 5: Detect Duplicate
+if (!seen.add(rowKey) || !seen.add(colKey) || !seen.add(boxKey))
+
+
+HashSet.add() returns false if item already exists
+
+If any duplicate → Sudoku is invalid
+
+🔹 Step 6: If No Conflicts
+return true;
