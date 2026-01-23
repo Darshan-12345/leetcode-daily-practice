@@ -1,0 +1,45 @@
+Step 1: Count p
+pCount → a:1, b:1, c:1
+
+Sliding Window of size 3
+Window	Index	Match?
+"cba"	0	✅
+"bae"	1	❌
+"aeb"	2	❌
+"eba"	3	❌
+"bab"	4	❌
+"aba"	5	❌
+"bac"	6	✅
+
+👉 Output → [0, 6]
+
+🧠 KEY INSIGHT (REMEMBER THIS)
+
+Anagram = same frequency
+
+Use fixed-size sliding window
+
+Add right character
+
+Remove left character
+
+Compare counts
+
+🎯 Interview One-Liner
+
+I used a sliding window with frequency arrays of size 26 to efficiently compare character counts in O(n) time.
+
+🔥 Common Interview Follow-ups
+
+Q: Why not HashMap?
+👉 Array is faster and simpler since only lowercase letters
+
+Q: Why sliding window?
+👉 Because we only care about substrings of length p
+
+✅ Final Summary
+Concept	Used
+Sliding Window	✅
+Frequency Count	✅
+Optimal Time	✅
+Interview Ready	💯
