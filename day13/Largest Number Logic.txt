@@ -1,0 +1,48 @@
+Step 1️⃣ Convert int[] → String[]
+
+Why?
+Because concatenation works on strings, not integers.
+
+String[] arr = new String[nums.length];
+for (int i = 0; i < nums.length; i++) {
+    arr[i] = String.valueOf(nums[i]);
+}
+
+Step 2️⃣ Sort using custom comparator
+
+We compare:
+
+(a + b) vs (b + a)
+
+
+To get largest number, we want descending order.
+
+Arrays.sort(arr, (a, b) -> (b + a).compareTo(a + b));
+
+
+📌 Example:
+
+a = "3", b = "30"
+b + a = "303"
+a + b = "330"
+"303".compareTo("330") → negative → correct order
+
+Step 3️⃣ Edge case: all zeros
+
+If the largest element is "0", then everything is "0"
+
+Example:
+
+[0, 0, 0] → "000" ❌
+Answer should be "0"
+
+if (arr[0].equals("0")) {
+    return "0";
+}
+
+Step 4️⃣ Join everything
+StringBuilder sb = new StringBuilder();
+for (String s : arr) {
+    sb.append(s);
+}
+return sb.toString();
