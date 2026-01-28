@@ -1,0 +1,28 @@
+🪜 Step-by-step Logic
+int n = nums.length;
+int[] res = new int[n];
+
+int left = 0;
+int right = n - 1;
+int index = n - 1;
+
+While left <= right
+int lsq = nums[left] * nums[left];
+int rsq = nums[right] * nums[right];
+
+Case 1️⃣: Left square is bigger
+if (lsq > rsq) {
+    res[index] = lsq;
+    left++;
+}
+
+Case 2️⃣: Right square is bigger
+else {
+    res[index] = rsq;
+    right--;
+}
+
+
+Then always:
+
+index--;
