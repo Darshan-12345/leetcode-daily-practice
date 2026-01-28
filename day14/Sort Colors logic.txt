@@ -1,0 +1,28 @@
+We look at nums[mid]:
+
+1️⃣ If nums[mid] == 0
+
+Swap with nums[low]
+
+Move low++ and mid++
+
+Why?
+Because 0 belongs to the front.
+
+2️⃣ If nums[mid] == 1
+
+Just mid++
+
+Why?
+Because 1 is already in the correct middle position.
+
+3️⃣ If nums[mid] == 2
+
+Swap with nums[high]
+
+Move high--
+
+❗ DO NOT move mid
+
+Why?
+Because the element coming from high is unknown.
