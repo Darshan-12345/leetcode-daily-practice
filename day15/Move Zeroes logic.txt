@@ -1,0 +1,24 @@
+🪜 Step-by-step Logic
+Example:
+nums = [0, 1, 0, 3, 12]
+
+Step 1: Move non-zeros forward
+
+Start index = 0
+
+Loop through array:
+
+If number ≠ 0 → put it at nums[index], then index++
+
+After this step:
+
+[1, 3, 12, ?, ?]
+ index = 3
+
+Step 2: Fill rest with zeros
+
+From index to end → put 0
+
+Final:
+
+[1, 3, 12, 0, 0]
