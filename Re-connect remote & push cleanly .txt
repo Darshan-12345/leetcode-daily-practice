@@ -1,0 +1,6 @@
+git remote add origin https://github.com/Darshan-12345/leetcode-daily-practice.git
+git checkout -b Tomesh
+git add .
+git commit -m "Fix folder structure and consolidate leetcode solutions"
+git pull origin Tomesh --allow-unrelated-histories
+git push -u origin Tomesh
