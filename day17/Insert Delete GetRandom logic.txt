@@ -1,0 +1,58 @@
+1️⃣ insert(val)
+Logic:
+
+If value already exists → return false
+
+Else:
+
+Add value to list
+
+Store value → index in map
+
+Return true
+
+Code logic:
+list.add(val);
+map.put(val, list.size() - 1);
+
+2️⃣ remove(val) ❗ (TRICKIEST PART)
+Problem:
+
+Removing from middle of list is O(n)
+
+💡 Trick:
+
+Swap the element to remove with the last element
+
+Remove last element (O(1))
+
+Steps:
+
+Get index of val from map
+
+Get last element of list
+
+Put last element in val’s position
+
+Update map
+
+Remove last element
+
+Remove val from map
+
+Visual:
+list = [1, 2, 3]
+remove(2)
+
+swap 2 with last → [1, 3, 3]
+remove last → [1, 3]
+
+3️⃣ getRandom()
+Logic:
+
+Random index from list
+
+Return element at that index
+
+Random rand = new Random();
+return list.get(rand.nextInt(list.size()));
