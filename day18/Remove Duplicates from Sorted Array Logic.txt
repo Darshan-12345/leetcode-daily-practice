@@ -1,0 +1,41 @@
+🪜 Step-by-Step Logic
+Example Input
+nums = [0,0,1,1,1,2,2,3,3,4]
+
+Step 1️⃣ Initialize
+int i = 0;
+
+
+nums[i] is the last unique element.
+
+Step 2️⃣ Loop from second element
+for (int j = 1; j < nums.length; j++)
+
+Step 3️⃣ Compare
+if (nums[j] != nums[i])
+
+
+If different → new unique element found.
+
+Step 4️⃣ Move & overwrite
+i++;
+nums[i] = nums[j];
+
+🧪 Dry Run (IMPORTANT)
+j	nums[j]	nums[i]	Action	Array
+1	0	0	same → skip	[0,0,1,1,1,2,2,3,3,4]
+2	1	0	diff → copy	[0,1,1,1,1,2,2,3,3,4]
+3	1	1	same	
+5	2	1	diff → copy	[0,1,2,1,1,2,2,3,3,4]
+7	3	2	diff → copy	
+9	4	3	diff → copy	
+
+Final first part:
+
+[0,1,2,3,4]
+
+✅ Final Answer
+
+Unique elements count = i + 1
+
+First k elements are correct
