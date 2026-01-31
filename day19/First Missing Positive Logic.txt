@@ -1,0 +1,39 @@
+Step 1️⃣ Place numbers in correct positions
+
+While iterating:
+
+Swap nums[i] with nums[nums[i] - 1]
+
+Only if:
+
+nums[i] is in range [1, n]
+
+It’s not already in correct place
+
+Step 2️⃣ Find first missing positive
+
+Scan array
+
+First index i where nums[i] != i+1
+
+Answer = i + 1
+
+Step 3️⃣ If everything is correct
+
+Return n + 1
+
+🧪 Dry Run (Example 2)
+Input:
+nums = [3,4,-1,1]
+n = 4
+
+After rearranging:
+[1, -1, 3, 4]
+
+Scan:
+
+index 0 → 1 ✅
+
+index 1 → should be 2 ❌
+
+👉 Answer = 2
