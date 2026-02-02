@@ -1,0 +1,27 @@
+🪜 Step-by-Step Logic
+Step 1️⃣ Initialize pointers
+int i = m - 1;          // nums1 valid elements
+int j = n - 1;          // nums2 elements
+int k = m + n - 1;      // end of nums1
+
+Step 2️⃣ Merge while both arrays have elements
+while (i >= 0 && j >= 0) {
+    if (nums1[i] > nums2[j]) {
+        nums1[k] = nums1[i];
+        i--;
+    } else {
+        nums1[k] = nums2[j];
+        j--;
+    }
+    k--;
+}
+
+Step 3️⃣ Copy remaining nums2 elements (if any)
+while (j >= 0) {
+    nums1[k] = nums2[j];
+    j--;
+    k--;
+}
+
+
+📌 No need to copy nums1 leftovers — they’re already in place.

@@ -1,0 +1,30 @@
+Step 1️⃣ Mark visited numbers
+
+Loop through array:
+
+For each nums[i]
+
+Compute index = abs(nums[i]) - 1
+
+Make nums[index] negative (if not already)
+
+Step 2️⃣ Find missing numbers
+
+Any index i where nums[i] is positive
+
+Means number i+1 was never visited
+
+Add i+1 to result
+
+🧪 Dry Run (Example 1)
+Input:
+nums = [4,3,2,7,8,2,3,1]
+
+After marking:
+[-4,-3,-2,-7,8,-2,-3,-1]
+
+Scan:
+
+index 4 → positive → missing 5
+
+index 5 → positive → missing 6
