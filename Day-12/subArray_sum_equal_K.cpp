@@ -2,7 +2,7 @@
 #include<unordered_map>
 #include<vector>
 using namespace std;
-
+ 
 
 
 class Solution {
@@ -21,7 +21,7 @@ public:
        }
        // then check subarray is exist or not 
        // use formula subarray(i,j) = pre(j) - pre(i-1)
-       // we suppose i to j is k 
+       // we suppose  sum for i to j is k 
        // then we need to find pre(i-1) in map
        // and store all prefixSum with there freq in map 
        // and search them and increase count
