@@ -1,0 +1,27 @@
+Step 1: Count live neighbors
+
+For each cell, check its 8 directions.
+
+A neighbor is originally alive if:
+
+board[r][c] == 1 || board[r][c] == -1
+
+Step 2: Apply rules and mark transitions
+
+For each cell:
+
+If live and neighbors < 2 or > 3 → mark -1
+
+If dead and neighbors == 3 → mark 2
+
+⚠️ Do NOT finalize values yet
+
+Step 3: Final cleanup pass
+
+Convert temporary values:
+
+-1 → 0
+
+2 → 1
+
+Now the board is fully updated ✔️
