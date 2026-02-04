@@ -1,0 +1,19 @@
+Step 1️⃣ Find the pivot
+
+From right to left, find the first index i such that:
+
+nums[i] < nums[i + 1]
+
+
+If not found → array is descending → reverse whole array.
+
+Step 2️⃣ Find the next greater element
+
+From right to left, find index j such that:
+
+nums[j] > nums[i]
+
+Step 3️⃣ Swap nums[i] and nums[j]
+Step 4️⃣ Reverse the suffix (i+1 to end)
+
+This makes the permutation just slightly bigger.
