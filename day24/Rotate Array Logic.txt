@@ -1,0 +1,32 @@
+Rotating by k where k > n is same as rotating by k % n
+
+k = k % nums.length;
+
+
+Example:
+
+n = 7, k = 10 → actual rotation = 10 % 7 = 3
+
+✅ BEST SOLUTION (In-place, O(1) space)
+🔑 Reverse Technique
+Idea:
+
+Rotation can be done using 3 reversals
+
+🧠 Logic (Step by Step)
+
+For:
+
+nums = [1,2,3,4,5,6,7], k = 3
+
+Step 1: Reverse the whole array
+[7,6,5,4,3,2,1]
+
+Step 2: Reverse first k elements
+[5,6,7 | 4,3,2,1]
+
+Step 3: Reverse remaining elements
+[5,6,7,1,2,3,4]
+
+
+🎯 Done!
