@@ -1,0 +1,13 @@
+Initialize k = 0
+
+Loop through array with index i
+
+If nums[i] != val
+
+put nums[i] at nums[k]
+
+increment k
+
+Ignore elements equal to val
+
+Return k
