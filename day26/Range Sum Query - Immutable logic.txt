@@ -1,0 +1,22 @@
+Prefix sum definition
+
+Let:
+
+prefix[i] = sum of elements from index 0 to i-1
+
+
+So:
+
+prefix[0] = 0
+prefix[1] = nums[0]
+prefix[2] = nums[0] + nums[1]
+...
+
+Range sum formula
+
+For any [left, right]:
+
+sum = prefix[right + 1] - prefix[left]
+
+
+🔥 This makes each query O(1).
