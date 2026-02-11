@@ -1,0 +1,22 @@
+🚀 Floyd’s Tortoise & Hare Algorithm
+Step 1: Detect cycle
+slow = nums[slow]
+fast = nums[nums[fast]]
+
+
+They will meet inside the cycle.
+
+Step 2: Find cycle start
+
+Move one pointer to start:
+
+slow = nums[0]
+
+
+Move both one step at a time:
+
+slow = nums[slow]
+fast = nums[fast]
+
+
+They meet at duplicate.
