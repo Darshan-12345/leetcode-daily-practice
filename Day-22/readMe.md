@@ -1,0 +1,2 @@
+# Smallest window containing 0, 1 and 2
+##### first find in this problem our substring having 0,1,2 for that we use every index variable if 1 exist then we change to true do for alls 0 and one also then we calculate index at every time and we calculate len when all exist in subarray and finding max - min of there index max is for last index like 2 find at some index at 5 then all three condtion true and min is our first true is start and cal difference between then and add +1 then give this our len and comare with prev and upadte this is logic
