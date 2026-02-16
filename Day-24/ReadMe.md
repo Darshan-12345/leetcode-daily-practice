@@ -1,0 +1,2 @@
+# Maximum subarray sum
+##### in this problem we find maximum sub array sum so first we intialize two varibles first is max_sum then current_sum current_sum update when we add current number in then value is incesed then we take max value then we drop this and take current as start else we continue  and next we update out max_sum  if current sum is greater then max_sum is updated to current sum
