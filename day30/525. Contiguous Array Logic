@@ -1,0 +1,21 @@
+Initialize:
+
+sum = 0
+map.put(0, -1)
+
+
+Traverse:
+
+If nums[i] == 0 → sum += -1
+
+Else → sum += 1
+
+If sum seen before:
+
+length = i - map.get(sum)
+
+update max
+
+Else:
+
+store sum with index
