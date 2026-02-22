@@ -1,0 +1,11 @@
+left = 0, right = s.length() - 1
+
+While left < right:
+
+If not alphanumeric → move pointer
+
+Compare lowercase versions
+
+If mismatch → return false
+
+If loop completes → return true

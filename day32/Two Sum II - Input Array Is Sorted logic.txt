@@ -1,0 +1,9 @@
+Simple left =0;
+right = n-1;
+
+as (l<r){
+    3 conditions
+    (1) l+r == sum  return res
+    (2) l+r < sum  l++
+    (3) l+r > sum  r--;
+}

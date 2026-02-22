@@ -1,0 +1,19 @@
+first sort the array
+assume any sum and treat it as min
+
+Initialize i loop upto n-2
+let l = i+1 
+r = n-1;
+check for duplicates if there continue; 
+
+while l<r  
+int sum = a[i]+a[l]+a[r]
+ if (math .abs(sum - target) < math.abs(asumme- target)){
+    asume = sum;
+ }
+ if sum <target  left++;
+ else if sum >target  right++;
+
+ else return sum;
+
+ return asume;

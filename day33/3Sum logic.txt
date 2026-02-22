@@ -1,0 +1,20 @@
+ok now
+sort the array 
+Initialize list of list to store result
+ start 1 st i loop from 0 to n-2
+
+sum = -a[i];
+check for duplicates if any continue;
+left = i+1;
+right = n-1;
+
+s = a[l]+a[r]
+run 2 sum with duplicates for every i
+while(l<r){
+    if(s == sum) add result  l++ ; r--;
+
+    while(l<r & a[l] == a[l-1] ) l++;
+    while(l<r & a[r] == a[r+1] ) r--;
+}
+
+return res
